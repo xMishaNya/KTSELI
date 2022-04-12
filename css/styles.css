@@ -1,0 +1,191 @@
+/* Стиль неактивных кнопок*/
+.borderlessbutton{
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  font-size: calc(16px + 5 * (100vw / 1280))
+}
+
+.borderlessbutton:hover{
+  color: #9e1c1c;
+  font-size: calc(16px + 5 * (100vw / 1280));
+}
+
+/* Стиль активных кнопок*/
+.borderlessactivebutton{
+  color: rgb(245, 245, 245);
+  text-decoration: underline;
+  font-size: calc(16px + 5 * (100vw / 1280));
+}
+
+.borderlessactivebutton:hover{
+  color: rgb(245, 245, 245);
+  text-decoration: underline;
+  font-size: calc(16px + 5 * (100vw / 1280));
+}
+
+/* Стили Текста в FAQ*/
+.BigNameActive{
+  color: rgb(245, 245, 245);
+  font-weight:bold;
+  text-decoration: underline;
+  font-size: calc(18px + 5 * (100vw / 1280));
+  margin-left: 5px;
+  padding: 10px;
+}
+
+.BigNameActive:hover{
+  color: #9e1c1c;
+  font-weight:bold;
+  text-decoration: underline;
+  font-size: calc(18px + 5 * (100vw / 1280));
+  margin-left: 5px;
+  padding: 10px;
+}
+
+.BigName{
+  color: rgb(245, 245, 245);
+  font-weight:bold;
+  text-decoration: none;
+  font-size: calc(18px + 5 * (100vw / 1280));
+  margin-left: 5px;
+  padding: 10px;
+}
+
+.BigName:hover{
+  color: #9e1c1c;
+  font-weight:bold;
+  text-decoration: underline;
+  font-size: calc(18px + 5 * (100vw / 1280));
+  margin-left: 5px;
+  padding: 10px;
+}
+
+.SmallName{
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  font-size: calc(16px + 5 * (100vw / 1280));
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.reference {
+    background-color: #363636;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: calc(10px + 5 * (100vw / 1280));
+}
+
+.BtnNewQuestion{
+  float: right;
+  color: rgb(245, 245, 245);
+  background: none;
+  font-size: calc(16px + 5 * (100vw / 1280));
+  margin-right: 20px;
+}
+
+.BtnNewBlog{
+  float: right;
+  color: rgb(245, 245, 245);
+  background: none;
+  font-size: calc(13px + 5 * (100vw / 1280));
+  margin-right: 20px;
+}
+
+
+.ImgBlogs{
+  float: left;
+  width:calc(150px + 5 * (100vw / 1280));
+  height: 150px;
+  border-radius:7px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.TextAbout{
+  font-size: calc(24px + 4 * (100vw / 1280));
+  color: rgb(245, 245, 245);
+  padding: 20px;
+}
+
+.PatternFootnote{
+  font-size: calc(12px + 5 * (100vw / 1280));
+  color: rgb(245, 245, 245);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.PatternQuestion{
+  font-size: calc(10px + 5 * (100vw / 1280));
+  border: 1px solid #000000;
+  padding: 10px;
+  font-weight:bold;
+  background: rgb(245, 245, 245) !important;
+  margin-left: 20px;
+  width: calc(70vw);
+}
+
+.PatternText{
+  font-size: calc(10px + 5 * (100vw / 1280));
+  border: 1px solid #000000;
+  padding: 10px;
+  background: rgb(245, 245, 245) !important;
+  margin-left: 20px;
+  width: calc(70vw);
+}
+
+.PatternBtnShare{
+  color: rgb(245, 245, 245);
+  background: none;
+  font-size: calc(13px + 5 * (100vw / 1280));
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.PatternPoint{
+  font-size: calc(10px + 5 * (100vw / 1280));
+  height: calc(40px + 7 * (100vw / 1280));
+  width: calc(72px + 7 * (100vw / 1280));
+  border: 1px solid #000000;
+  padding: 10px;
+  background: rgb(245, 245, 245) !important;
+  margin-left: 20px;
+}
+
+
+
+/* Стиль списка (Хлебные крошки)*/
+ul.breadcrumb {
+  color: rgb(245, 245, 245);
+  background-color: #363636;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Отображение элементов списка бок о бок */
+ul.breadcrumb li {
+  display: inline;
+  font-size: calc(12px + 5 * (100vw / 1280));
+}
+
+/* Добавить символ косой черты (/) перед/за каждым элементом списка */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: rgb(245, 245, 245);
+  content: "/\00a0";
+}
+
+/* Добавить цвет для всех ссылок внутри списка */
+ul.breadcrumb li a {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+}
+
+/* Добавить цвет на наведении курсора мыши */
+ul.breadcrumb li a:hover {
+  color: #9e1c1c;
+  text-decoration: underline;
+}
