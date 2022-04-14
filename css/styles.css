@@ -137,6 +137,60 @@
   width: calc(70vw);
 }
 
+@media screen and (min-width: 1700px){
+        .PatternText {
+            width: calc(60vw);
+        }
+        .PatternQuestion{
+          width: calc(60vw);
+        }
+}
+
+@media screen and (min-width: 2000px){
+        .PatternText {
+          width: calc(50vw);
+        }
+        .PatternQuestion{
+          width: calc(50vw);
+        }
+}
+
+@media screen and (min-width: 2400px){
+        .PatternText {
+          width: calc(40vw);
+        }
+        .PatternQuestion{
+          width: calc(40vw);
+        }
+}
+
+@media screen and (min-width: 3000px){
+        .PatternText {
+          width: calc(35vw);
+        }
+        .PatternQuestion{
+          width: calc(35vw);
+        }
+}
+
+@media screen and (min-width: 3400px){
+        .PatternText {
+          width: calc(30vw);
+        }
+        .PatternQuestion{
+          width: calc(30vw);
+        }
+}
+
+@media screen and (min-width: 4000px){
+        .PatternText {
+          width: calc(25vw);
+        }
+        .PatternQuestion{
+          width: calc(25vw);
+        }
+}
+
 .PatternBtnShare{
   color: rgb(245, 245, 245);
   background: none;
