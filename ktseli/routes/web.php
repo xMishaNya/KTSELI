@@ -13,6 +13,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('main');
+});
+
+Route::get('about', function () {
+    return view('about');
+});
+
+Route::get('news', function () {
+    return view('news');
+});
+
+Route::get('faq_open', function () {
+    return view('faq_open');
+});
+
+Route::get('faq_closed', function () {
+    return view('faq_closed');
+});
+
+Route::get('blogs', function () {
+    return view('blogs');
+});
+
+Route::get('pattern', function () {
+    return view('pattern');
 });
