@@ -16,7 +16,7 @@
 
         <div class="nav navbar">
             <a href="#" class="px-3">Поиск</a>
-            <a href="#" class="px-3">Войти</a>
+            <a href="/registration" class="px-3">Войти</a>
         </div>
     </div>
 </div>
