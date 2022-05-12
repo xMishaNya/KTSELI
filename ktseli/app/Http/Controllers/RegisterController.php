@@ -13,11 +13,12 @@ class RegisterController extends Controller
 {
     public function save(Request $request){
       if(Auth::check()){
-        return redirect(route('user.private'));
+        return redirect('/');
       }
 
       $validateFields = $request->validate([
         'email' => 'required|email',
+        'name' => 'required',
         'password' => 'required'
       ]);
 
@@ -27,10 +28,16 @@ class RegisterController extends Controller
         ]);
       }
 
+      if(User::where('name', $validateFields['name'])->exists()){
+        return redirect(route('user.registration'))->withErrors([
+          'formError' => 'Пользователь с таким именем уже существует'
+        ]);
+      }
+
       $user = User::create($validateFields);
       if($user){
         Auth::login($user);
-        return redirect(route('user.private'));
+        return redirect('/');
       }
 
       return redirect(route('user.login'))->withErrors([

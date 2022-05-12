@@ -35,11 +35,10 @@ Route::get('pattern', function () {
 
 // Регистрация
 Route::name('user.')->group(function(){
-  Route::view('/private', 'private')->middleware('auth')->name('private');
 
   Route::get('/login', function(){
     if (Auth::check()){
-      return redirect(route('user.private'));
+      return redirect('/');
     }
     return view('login');
   })->name('login');
@@ -53,10 +52,17 @@ Route::name('user.')->group(function(){
 
   Route::get('/registration', function(){
     if (Auth::check()){
-      return redirect(route('user.private'));
+      return redirect('/');
     }
     return view('registration');
   })->name('registration');
 
   Route::post('/registration', [\App\Http\Controllers\RegisterController::class, 'save']);
 });
+
+//Админка
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
+//Проверка на логин в хедере

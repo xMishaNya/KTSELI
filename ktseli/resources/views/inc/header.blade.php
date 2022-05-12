@@ -14,10 +14,17 @@
             <li><a href="/about" class="px-3">О нас</a></li>
         </ul>
 
-        <div class="nav navbar">
+        @can('view-loggined-user-header')
+          <div class="nav navbar">
+            <a href="/logout" class="px-3">Выход</a>
+          </div>
+        @endcan
+        @cannot('view-loggined-user-header')
+          <div class="nav navbar">
             <a href="#" class="px-3">Поиск</a>
             <a href="/registration" class="px-3">Войти</a>
-        </div>
+          </div>
+        @endcan
     </div>
 </div>
 </header>

@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSRF TOKEN -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
-	<title>Taskman</title>
+	<title>Вход</title>
   <!-- Styles -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/app.css">
@@ -23,6 +23,13 @@
     <input class="form-control" id="email" name="email" type="text"  value="" placeholder="Email">
     @error('email')
     <div class="alert alert-danger">{{ message }}</div>
+    @enderror
+  </div>
+  <div class="form-group">
+    <label for="name" class="col-form-label-lg">Ваше имя</label>
+    <input class="form-control" id="name" name="name" type="text"  value="" placeholder="Имя">
+    @error('name')
+    <div class="alert alert-danger">{{ $message }}</div>
     @enderror
   </div>
   <div class="form-group">

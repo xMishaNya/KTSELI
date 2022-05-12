@@ -6,6 +6,7 @@
 
 @section('inc.header')
 
+
 @section('content')
 		<div class="container">
 			<div class="announcer">
